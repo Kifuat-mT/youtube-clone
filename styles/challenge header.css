@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: solid 1px rgb(223, 223, 223);
+  z-index: 200;
+  }
+
+  .left-section {
+  display: flex;
+  align-items: center;
+  }
+
+  .hamburger-menu {
+    height: 25px;
+    margin: 0 25px 0 25px;
+  }
+  .youtube-logo {
+    height: 20px;
+    
+  }
+
+  .search-button,
+  .voice-search,
+  .upload,
+  .youtube-apps,
+  .notifications {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .search-button .tooltip,
+  .voice-search .tooltip,
+  .upload .tooltip,
+  .youtube-apps .tooltip,
+  .notifications .tooltip {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    padding: 3px 5px 3px 5px;
+    bottom: -25px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+  }
+
+  .search-button:hover .tooltip,
+  .voice-search:hover .tooltip,
+  .upload:hover .tooltip,
+  .youtube-apps:hover .tooltip,
+  .notifications:hover .tooltip {
+    opacity: 1;
+  }
+
+  .middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 35px 0 70px;
+  max-width: 500px;
+  }
+
+  .search-box {
+    font-family: arial;
+    font-size: 15px;
+    width: 0;
+    flex: 1;
+    height: 35px;
+    border: solid 1px rgb(190, 190, 190);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+    
+    }
+    .search-box::placeholder {
+      font-family: arial;
+      font-size: 15px;
+    }
+    .search-button {
+      height: 39px;
+      width: 60px;
+      border: solid 1px rgb(190, 190, 190);
+      margin-left: -1px;
+      margin-right: 10px;
+    }
+    .search-button img {
+      height: 30px;
+    }
+    .voice-search {
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      border: none;
+      
+    }
+  .right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10px;
+    width: 200px;
+    flex-shrink: 0;
+  }
+  .upload {
+    height: 30px;
+    width: 30px;
+  }
+  .youtube-apps {
+    height: 30px;
+    width: 30px;
+  }
+  .notifications {
+    height: 30px;
+    width: 30px;
+  }
+  .profile-pic img {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 600px) {
+    .search-box {
+      flex: 1;
+    }
+    .voice-search {
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      border: none;
+  }
+
+  .middle-section {
+    margin: 0 10px 0 10px;
+  }
+
+  .right-section {
+    justify-content: flex-end;
+    width: 100px;
+  }
+}

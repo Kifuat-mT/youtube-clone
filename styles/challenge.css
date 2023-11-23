@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 90px;
+  font-family: arial;
+  background-color: rgb(248, 248, 248);
+}
+p {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.thumbnail {
+  width: 100%;
+  
+}
+.profile-container {
+width: 50px;
+margin-right: 5px;
+position: relative;
+height: 50px;
+
+}
+.profile {
+width: 40px;
+height: 40px;
+object-fit: cover;
+border-radius: 20px;
+
+}
+.account-info {
+display: flex;
+flex-direction: row;
+
+
+}
+.info {
+vertical-align: top;
+}
+.headline {
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+.account-name, .stats {
+font-size: 14px;
+color: rgb(143, 138, 138);
+margin-bottom: 5px;
+}
+
+.goat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.thumbnail-box {
+  position: relative;
+}
+.timer {
+  position: absolute;
+  background-color: black;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  right: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.tooltip img {
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile-container .tooltip {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 200px;
+  opacity: 0;
+  align-items: center;
+  pointer-events: none;
+  padding: 5px;
+  border-radius: 5px;
+  bottom: -65px;
+}
+
+.profile-container:hover .tooltip {
+  opacity: 1;
+}
+
+.name {
+  font-weight: bold;
+}
+.Subscribers {
+  font-size: 14px;
+  color: gray;
+}
+
+@media (max-width: 900px) {
+.goat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 600px) {
+  .goat {
+    grid-template-columns: 1fr;
+  }
+}
