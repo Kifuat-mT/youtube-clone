@@ -56,14 +56,7 @@
     padding: 60px 0 70px 0;
   }
   .sidebar {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 478px;
-    left: 0px;
-    right: 0;
-    height: 12%;
-    width: 100%;
+    display: none;
   }
   .sidebar-box {
     width: 100%;
